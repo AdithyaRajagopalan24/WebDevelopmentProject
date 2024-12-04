@@ -1,0 +1,234 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cta-icon {
+    background-color: #f04e23;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+.cta-icon i {
+    color: #fff;
+}
+.cta-icon:hover {
+    background-color: #d93e15;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+}
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+}
+.cta-btn {
+    background-color: #f04e23;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+.cta-btn:hover {
+    background-color: #d93e15;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    z-index: 2;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero .cta-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.facilities h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.facility-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.facility-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 40px);
+    max-width: 300px;
+    text-align: center;
+}
+.facility-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.facility-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.facility-card p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+   
+/* Footer Styling */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    font-size: 0.9rem;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-column {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+}
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-column ul li a:hover {
+    color: #f04e23;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
+.footer-bottom p {
+    margin: 0;
+    color: #ccc;
+}
+/*Company Logo*/
+.Companylogo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 70;
+}
+.Companylogo-img {
+    width: 4px;  /* Adjust the size of the logo */
+    height: 4px;
+    margin-right: 10px;  /* Space between logo and text */
+}
