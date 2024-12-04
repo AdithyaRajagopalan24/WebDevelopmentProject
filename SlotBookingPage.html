@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HG current slots</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+header {
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.header-btn {
+    background-color: #ffd200;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+header button:hover {
+    background-color: #ffbb00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.cancel-btn {
+    background-color: white;
+    border: 2px solid #ff5e5e;
+    color: #ff5e5e;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cancel-btn:hover {
+    background-color: #ff5e5e;
+    color: white;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-buttons">
+                <button class="header-btn">Payments</button>
+		<form action = "newSlotsPage.html">
+	                <button class="header-btn">List All bookings</button>
+		</form>
+                <button class="header-btn">Balance : 370</button>
+		<form action = "HomePage.html">
+	                <button class="header-btn">Sign Out</button>
+		</form>
+            </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Gym Name</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Duration</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gold's</td>
+                    <td>Monday, May 24th 2021</td>
+                    <td>07:57 PM</td>
+                    <td>30 Minutes</td>
+                    <td><button class="cancel-btn">Cancel</button></td>
+                </tr>
+                <tr>
+                    <td>Gold's</td>
+                    <td>Monday, May 24th 2021</td>
+                    <td>09:08 PM</td>
+                    <td>30 Minutes</td>
+                    <td><button class="cancel-btn">Cancel</button></td>
+                </tr>
+                <tr>
+                    <td>Gold's</td>
+                    <td>Monday, May 24th 2021</td>
+                    <td>07:49 PM</td>
+                    <td>30 Minutes</td>
+                    <td><button class="cancel-btn">Cancel</button></td>
+                </tr>
+                <!-- Repeat more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luxury Gym Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<head>
+<style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cta-icon {
+    background-color: #f04e23;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+}
+.cta-icon i {
+    color: #fff;
+}
+.cta-icon:hover {
+    background-color: #d93e15;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+/* Navigation */
+header {
+    background-color: #000;
+    padding: 10px 0;
+}
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 700;
+}
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+.nav-links a {
+    color: #fff;
+    font-size: 1rem;
+}
+.cta-btn {
+    background-color: #f04e23;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+.cta-btn:hover {
+    background-color: #d93e15;
+}
+
+/* Hero Section */
+.hero {
+    background: url('hero-image.jpg') center center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.hero:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+    z-index: 2;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+.hero .cta-btn {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+}
+
+/* Facilities Section */
+.facilities {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+.facilities h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.facility-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.facility-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(25% - 40px);
+    max-width: 300px;
+    text-align: center;
+}
+.facility-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.facility-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+.facility-card p {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+   
+/* Footer Styling */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    font-size: 0.9rem;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.footer-column {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+}
+.footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-column ul li a:hover {
+    color: #f04e23;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    font-size: 0.8rem;
+}
+.footer-bottom p {
+    margin: 0;
+    color: #ccc;
+}
+/*Company Logo*/
+.Companylogo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 70;
+}
+.Companylogo-img {
+    width: 4px;  /* Adjust the size of the logo */
+    height: 4px;
+    margin-right: 10px;  /* Space between logo and text */
+}
+
+
+</style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+        <div class="logo">
+            <img src="CompanyLogo.png" alt="HealthGym Logo" class="logo-img"> 
+	    HealthGym
+	</div>
+            <ul class="nav-links">
+                <li><a href="#">Slots</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Care</a></li>
+            </ul>
+        <a href="#" class="cta-icon"><i class="fas fa-user"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Experience Luxury Fitness</h1>
+            <p>State-of-the-art fitness centers with premium facilities and world-class trainers.</p>
+            <a href="#" class="cta-btn">Book a Slot</a>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="facilities">
+        <h2>Our Luxury Facilities</h2>
+        <div class="facility-grid">
+            <div class="facility-card">
+
+                <h3>Modern Equipment</h3>
+                <p>Top-tier machines to power your workout.</p>
+            </div>
+            <div class="facility-card">
+
+                <h3>Spacious Interiors</h3>
+                <p>Ample space for all your workout needs.</p>
+            </div>
+            <div class="facility-card">
+
+                <h3>Personal Training</h3>
+                <p>Expert trainers to guide you.</p>
+            </div>
+            <div class="facility-card">
+
+                <h3>Care Store</h3>
+                <p>Know what to do when you have a specific injury.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="site-footer">
+    <div class="footer-container">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <!-- Column 1: Company Info -->
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Column 2: Services -->
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Luxury Gyms</a></li>
+                    <li><a href="#">Personal Training</a></li>
+                    <li><a href="#">Membership</a></li>
+                    <li><a href="#">Online Classes</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Support -->
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <!-- Column 4: Follow Us -->
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-logo.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram-logo.png" alt="Instagram"></a>
+                    <a href="#"><img src="twitter-logo.png" alt="Twitter"></a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 FitnessPro. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
